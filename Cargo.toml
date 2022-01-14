@@ -1,0 +1,21 @@
+[package]
+name = "rnd"
+version = "0.9.0"
+edition = "2018"
+description = """
+A small library of easy-to-use non-cryptograhic pseudo-random number generators.
+"""
+authors = ["Stefan Zobel <spliterator@gmail.com>"]
+license = "Apache-2.0 OR MIT"
+keywords = ["random", "prng", "rng"]
+categories = ["algorithms"]
+repository = "https://github.com/stefan-zobel/rnd-rs"
+homepage = "https://github.com/stefan-zobel/rnd-rs"
+
+
+[dependencies]
+parking_lot = { version = "0.11.2" }
+
+
+[dev-dependencies]
+chrono = "0.4.19"
