@@ -14,7 +14,7 @@
 //! which is implemented in [Stc64](Stc64).
 //!
 //! Another fast high quality algorithm is <a href=https://arxiv.org/pdf/1805.01407.pdf>Blackman and Vigna's (2019) xoshiro256**</a>
-//! which is provided by [XoShiRo256StarStar](XoShiRo256StarStar),
+//! which is provided by [XoShiRo256StarStar](XoShiRo256StarStar).
 //!
 //! For applications that use tuples of consecutively generated values, it may be desirable
 //! to use a generator that is k-dimensionally equidistributed such that k is at least as
