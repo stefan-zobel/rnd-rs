@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["rnd"] = [{"text":"impl <a class=\"trait\" href=\"https://doc.rust-lang.org/1.58.0/core/marker/trait.Copy.html\" title=\"trait core::marker::Copy\">Copy</a> for <a class=\"struct\" href=\"rnd/pseudo_random/struct.ThreadLocalPrng.html\" title=\"struct rnd::pseudo_random::ThreadLocalPrng\">ThreadLocalPrng</a>","synthetic":false,"types":["rnd::pseudo_random::ThreadLocalPrng"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()
