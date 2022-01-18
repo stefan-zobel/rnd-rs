@@ -16,15 +16,12 @@ static mut SEED_UNIQUIFIER: i64 = 0x1ed8b55fac9deci64;
 
 static LAST_SEED: Mutex<RawMutex, i64> = const_mutex(0i64);
 
-#[inline]
-fn epoch_begin() -> SystemTime {
-    // 2022-01-01 00:00:00 UTC
-    UNIX_EPOCH + Duration::new(1640995200, 0)
-}
+// 2022-01-01 00:00:00 UTC
+const EPOCH_OFFSET: Duration = Duration::new(1640995200, 0);
 
 fn nano_time() -> i64 {
     SystemTime::now()
-        .duration_since(epoch_begin())
+        .duration_since(UNIX_EPOCH + EPOCH_OFFSET)
         .expect("time went backwards!")
         .as_nanos() as i64
 }
@@ -80,7 +77,7 @@ mod simple_seed_tests {
 
     #[test]
     fn test_epoch_begin() {
-        let begin = epoch_begin();
+        let begin = UNIX_EPOCH + EPOCH_OFFSET;
         let datetime: DateTime<Utc> = begin.into();
         let s = datetime.to_string();
         assert_eq!(s, "2022-01-01 00:00:00 UTC");

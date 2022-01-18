@@ -5,6 +5,7 @@ edition = "2018"
 description = """
 A small library of easy-to-use non-cryptograhic pseudo-random number generators.
 """
+rust-version = "1.58"
 authors = ["Stefan Zobel <spliterator@gmail.com>"]
 license = "Apache-2.0 OR MIT"
 keywords = ["random", "prng", "rng"]
