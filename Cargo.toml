@@ -12,6 +12,7 @@ keywords = ["random", "prng", "rng"]
 categories = ["algorithms"]
 repository = "https://github.com/stefan-zobel/rnd-rs"
 homepage = "https://github.com/stefan-zobel/rnd-rs"
+exclude = ["/docs"]
 
 
 [dependencies]
